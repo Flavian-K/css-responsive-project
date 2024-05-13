@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sedan SC", sans-serif;
+}
+
+html,
+body {
+	overflow-y: scroll;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	color: grey;
+	padding: 20px 20px;
+}
+
+.nav-list {
+	display: flex;
+	text-decoration: none;
+}
+
+.nav-list li {
+	margin-right: 5px;
+	list-style-type: none;
+	border: solid black;
+	padding: 10px;
+	border-radius: 2em;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: grey;
+}
+
+.nav-list li:hover {
+	background-color: lightgreen;
+}
+
+#products {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 120px;
+	font-size: large;
+	padding: 10px;
+	color: white;
+	background-color: pink;
+}
+
+.product-card img {
+	margin-bottom: 10px;
+	height: 400px;
+}
+
+.product-card > * {
+	margin-bottom: 10px;
+}
+
+.btn-shop-now {
+	border: solid black;
+	padding: 5px;
+	background-color: white;
+	color: grey;
+	text-decoration: none;
+}
+
+.btn-shop-now:hover {
+	background-color: lightgreen;
+}
+
+@media screen and (max-width: 768px) {
+	#products {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 250px;
+	}
+	.navbar {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.nav-list {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+}
+
+body > * {
+	margin-bottom: 20px;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.footer-column {
+	margin: 20px 0;
+}
+
+.product-card {
+	background-color: rgb(226, 115, 115);
+	border: 5px solid white;
+	padding: 30px;
+}
+
+footer {
+	border: solid black;
+}
+
+footer h2 {
+	text-decoration: underline;
+}
